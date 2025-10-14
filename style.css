@@ -4,15 +4,14 @@
     color: #c7ecee;
 }
 body{
-    background-color: #f1f2f6;
+    background-color: #2f3542;
 }
 
 .container{
+    background-color: white;
     box-sizing: border-box;
-    padding:0px 5px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
 }
 h1{
     text-decoration: underline;
@@ -25,8 +24,6 @@ a{
     padding-left: 7px;
     background-color: #2f3542;
     color: white;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
 
 }
 .header .nav{
@@ -47,10 +44,12 @@ a{
 .main{
     display: grid;
     grid-template-columns:1fr 5.5fr ;
+    
 }
 
 .main .cntnr{
-    border-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     grid-column: 1/2;
     background-color: #555e67;
     margin: 5px 0px;
@@ -87,12 +86,53 @@ input[type="button"]{
 
 }
 .main .cntnt{
-    display: grid;
-    grid-template-rows: 25fr 5fr;
     padding-left: 15px;
     padding-top: 7px;
+    
+}
+.contnt .content{
+    grid-column: 2/-1;
+    grid-row: 1/-2;
+        
 }
 .articles{
+    margin-right:  10px;
+    padding-bottom: 7px;
+    grid-column: 2/-1;
+    grid-row: -2/-1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(75px,1fr));
+    gap: 3px;
+}
+.article{
+    border: 1.5px solid #555e67;
+    border-radius: 4px;
+    padding-left: 7px;
+    padding-bottom: 4px;
+    background-color: #ced6e0f6;
+}
+.article a{
+     text-decoration: underline;
+     columns: #9980FA;
+}
+
+.footer{
+    padding-left: 5px;
+    display: grid;    
+    grid-template-rows: 50px 70px;    
+    background-color: #2f3542;
+    color: white;
+}
+.footer>section{
     display: flex;
-    grid-row:26/-1 ;
+    padding: 20px;
+
+}
+
+.footer .media {
+    margin-left: auto;
+}
+.footer p{
+    grid-column: 1/-1;
+    grid-row: 2/-1;
 }
