@@ -140,7 +140,7 @@ input[type="button"]{
     grid-row: 2/-1;
 }
 
-@media screen and (max-width:900px){
+@media screen and (max-width:992px){
     .main{
         grid-template-columns: 2fr 5fr;
     }
@@ -155,7 +155,9 @@ input[type="button"]{
     }
 }
 @media screen and (max-width:600px){
-    
+    .container{
+        font-size: 1.3em;
+    }
     .header{
         padding: 0px;
     }
