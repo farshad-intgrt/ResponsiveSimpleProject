@@ -4,7 +4,7 @@
  A simple project that I intended to implement  a page primarily to has a showcase for responsive  techniques by using HTML5 and CSS3.
 
 ## Featurs
- Mobilee:(width less than 600px)
+ Mobilee:(width less than 600px) \n
          _ The navigation bar top of header collapes into vertical.
          _ The menu bar get in to a one drewer menu.  
          _ Buttoms come up under the header
